@@ -138,6 +138,12 @@ class course():
 
 # starting the class
 url = "https://www.embl.de/predoccourse/2018/schedule/index.html"
+
+
+if len(sys.argv) > 1:
+    lc = sys.argv[1]
+else:
+    lc = "Predoc_Course_2018.ics"
 cs = course(url,
-            "Predoc_Course_2018.ics")
+            lc)
 
